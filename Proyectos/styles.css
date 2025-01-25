@@ -1,0 +1,125 @@
+/* Reset de estilos básicos */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Copperplate, Papyrus, fantasy ;
+  font-size: 16px;
+  background-image:url(mathilde-lagarrigue-dupe.jpeg);
+  background-size: cover;
+  background-color: beige;
+  color: beige;
+  line-height: 1.5;
+
+   /* Añadimos la animación al cargar la página */
+   opacity: 0;  /* Inicialmente invisible */
+   transform: translateY(30px);  /* Empezamos con un desplazamiento hacia abajo */
+   animation: fadeInUp 1.5s forwards;  /* Usamos la animación fadeInUp */
+ }
+
+header {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: black;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Estilos para los proyectos */
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.proyecto {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.miniatura {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ddd;
+}
+
+.descripcion {
+  padding: 20px;
+}
+
+.descripcion h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.descripcion p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.descripcion a {
+  color: #0073e6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.descripcion a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+/* Definimos la animación de desvanecimiento y deslizamiento */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

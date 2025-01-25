@@ -9,6 +9,7 @@ html, body {
 body {
     font-family: Copperplate, Papyrus, fantasy ;
     font-size: 16px;
+    background-image:url(mathilde-lagarrigue-dupe.jpeg);
     background-size: cover;
     background-color: beige;
     color: beige;
